@@ -1,0 +1,237 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.section{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.section:nth-child(1){
+	background-image: url("img/section4.jpg");
+}
+.section:nth-child(n+2){
+	/*background-image: url("img/banner2.jpg");*/
+	background-color: #35DEEC;
+}
+/*.section:nth-child(3){
+	background-image: url("img/banner3.jpg");
+}
+.section:nth-child(4){
+	background-image: url("img/banner.jpg");
+}*/
+.left{
+	float: left;
+}
+header{
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	height: 40px;
+	background-color: rgba(0,0,0,0.1);
+}
+header a{
+	text-decoration: none;
+	color: #fff;
+}
+header a:hover{
+	color: red;
+}
+header .logo{
+	padding: 10px 30px;
+	height: 40px;
+	float: left;
+	display: inline-block;
+}
+
+header ul{
+	list-style: none;
+	float: right;
+}
+
+header ul li{
+	display: inline-block;
+	line-height: 40px;
+
+}
+header ul li a{
+	padding: 0px 10px;
+	margin-right: 10px;
+	line-height: inherit;
+}
+
+.banner{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+}
+.banner .inner{
+	position: relative;
+	top: 110px;
+}
+.banner .inner span{
+	font-size: 26px;
+	font-weight: bold;
+	width: 130px;
+	margin: 0px auto;
+	padding: 30px 0px;
+	line-height: 60px;
+	display:block;
+}
+.banner .inner p{
+	font-size: 24px;
+	width: 500px;
+	margin: 0 auto;
+	padding: 20px 0px;
+	display:block;
+	line-height: 30px;
+}
+.banner .inner p label{
+	font-size: 20px;
+	display: block;
+}
+.banner .inner p label strong{
+	font-size: 26px;
+	color: #eee;
+	font-family: "楷体";
+}
+.banner .inner p.contact{
+	padding: 5px 0px;
+	color: #3CF5DD;
+	font-size: 20px;
+}
+.banner .inner button{
+	width: 70px;
+	height: 40px;
+	padding: 12px 3px;
+	border: 0;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	background-color: orange;
+}
+.banner .inner .skill{
+	margin: 0 auto;
+	list-style: none;
+	width: 500px;
+	line-height: 30px;
+}
+.banner .inner .skill .skill-unit{
+	display: inline-block;
+	font-size: 20px;
+	font-family: Arial;
+	margin: 10px 5px;
+	padding: 3px 5px;
+}
+.banner .inner .skill .skill-unit:nth-child(5n+1){
+	font-size: 25px;
+	font-family: Helvetica;
+}
+.banner .inner .skill .skill-unit:nth-child(5n+3){
+	font-size: 30px;
+	font-family: "微软雅黑";
+}
+
+
+.banner .more{
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 0px;
+	z-index: 999;
+	cursor: pointer;
+}
+
+.banner .inner .project{
+	margin: 0 auto;
+	list-style: none;
+	width: 95%;
+	line-height: 40px;
+}
+.banner .inner .project .project-unit{
+	display: inline-block;
+	width: 45%;
+	font-family: Arial;
+	margin: 10px 5px;
+	padding: 3px 5px;
+	vertical-align: middle;
+}
+.banner .inner .project .project-unit img{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	float: left;
+}
+.banner .inner .project .project-unit p{
+	padding: 0px 10px;
+    width: 70%;
+	display: inline-block;
+	font-size: 16px;
+	text-align: left;
+	text-indent: 2em;
+}
+
+.banner .inner .work-set{
+	margin: 0 auto;
+	list-style: none;
+	width: 40%;
+	line-height: 40px;
+}
+.banner .inner .work-set .work{
+	display: inline-block;
+	width: 45%;
+	font-family: "微软雅黑";
+	margin: 10px 5px;
+	padding: 3px 5px;
+	vertical-align: middle;
+}
+.banner .inner .work-set .work a{
+	color: #eee;
+	text-decoration: none;
+	transform: scale(1);
+	transition: all 1s ease;
+}
+.banner .inner .work-set .work a:hover{
+	color: #2ABF9E;
+	transform: scale(1.1);
+}
+#page{
+	position:fixed;
+	right: 10px;
+	top: 50%;
+	list-style: none;
+}
+#page li{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #fff;
+	margin: 0 0 10px 5px;
+	cursor: pointer;
+}
+#page li.active{
+	width: 14px;
+	height: 14px;
+	border: 2px solid #FFFE00;
+	background: none;
+	margin-left: 0;
+}
